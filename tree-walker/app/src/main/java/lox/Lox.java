@@ -52,6 +52,7 @@ public class Lox {
     }
 
     public static void main(String[] args) throws IOException {
+        System.out.println("Starting lox...");
         if (args.length > 1) {
             System.out.println("Usage: lox [script]");
             System.exit(64);
