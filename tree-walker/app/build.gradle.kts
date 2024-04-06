@@ -34,3 +34,7 @@ application {
     // Define the main class for the application.
     mainClass.set("lox.Lox")
 }
+
+tasks.named<JavaExec>("run") {
+    standardInput = System.`in`
+}

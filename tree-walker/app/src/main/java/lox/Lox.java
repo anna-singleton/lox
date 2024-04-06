@@ -49,6 +49,7 @@ public class Lox {
             run(line);
             hadError = false;
         }
+
     }
 
     public static void main(String[] args) throws IOException {
@@ -59,6 +60,7 @@ public class Lox {
         } else if (args.length == 1) {
             runFile(args[0]);
         } else {
+            System.out.println("Running Prompt...");
             runPrompt();
         }
     }
